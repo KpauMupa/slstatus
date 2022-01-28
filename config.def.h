@@ -67,11 +67,10 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ netspeed_rx, " ▼%sB/s |" ,   "enp37s0" },
 	{ netspeed_tx, " ▲%sB/s |" ,   "enp37s0" },
-/*	{ run_command, ": %4s ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" }, */
-	{ cpu_perc, "   %s%% |" ,          NULL },
-/*	{ cpu_perc, "  %s%% |" ,          NULL }, */
+	{ cpu_perc, "  %s%% |" ,          NULL },
 	{ run_command, "   %4s |", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g" },
-/*	{ ram_perc, "   %s%% |",           NULL }, */
-	{ run_command, " %4s ", "date '+%d %b (%a) %H:%M:%S'"           },
-/*	{ datetime, "%s |",        " %a %b %d %T" }, */
+	{ swap_perc,   "   %s%% |", NULL },
+	{ run_command, " %4s |", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ keymap, " %s |", NULL },
+	{ run_command, " %4s ", "date '+%d %b (%a) %H:%M:%S'" },
 };
