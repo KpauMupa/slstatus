@@ -70,7 +70,7 @@ static const struct arg args[] = {
 	{ cpu_perc, "  %s%% |" ,          NULL },
 	{ run_command, "   %4s |", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g" },
 	{ swap_perc,   "   %s%% |", NULL },
-	{ run_command, " %4s |", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ run_command, "  %4s |", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ keymap, " %s |", NULL },
 	{ run_command, " %4s ", "date '+%d %b (%a) %H:%M:%S'" },
 };
