@@ -1,3 +1,9 @@
+# My build of SLStatus
+Not very different from default. 
+Font "Awesome" is needed for the icons to appear.
+
+## Default slstatus readme:
+
 slstatus - suckless status
 ==========================
 slstatus is a suckless status monitor for window managers that use WM_NAME
